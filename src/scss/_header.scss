@@ -1,0 +1,62 @@
+.header {
+    height: 40px;
+    padding: 0 20px;
+    margin-top: 0;
+    line-height: 25px;
+    h3 {
+        float: left;
+        height: 25px;
+        line-height: 25px;
+        a {
+            color: $common-text;
+            text-decoration: none;
+            transition: all 0.4s;
+        }
+    }
+    input[type=checkbox] {
+       position: absolute;
+       top: -9999px;
+       left: -9999px;
+       /* For mobile, it's typically better to position checkbox on top of clickable
+          area and turn opacity to 0 instead. */
+    }
+    .nav {
+        list-style: none;
+    }
+    @media (min-width: 481px) {
+        .mobile-drawer-button {
+            display: none;
+        }
+        .nav {
+            float: right;
+            li {
+                display: inline-block;
+                text-align: center;
+                height: 80%;
+                a {
+                    padding: 0 10px;
+                    color: $common-text;
+                    text-decoration: none;
+                    transition: all 0.4s;
+                    div {
+                        transition: all 0.4s;
+                        background-color: $common-text;
+                        width: 4px;
+                        height: 4px;
+                        margin: 0 calc(50% + 5px);
+                        border-radius: 5px;
+                    }
+                }
+            }
+            a:hover{
+                color: $common-text-dark;
+                div {
+                    width: 80%;
+                    height: 4px;
+                    margin: 0 calc(10% + 5px);
+                    color: $common-text-dark;
+                }
+            }
+        }
+    }
+}

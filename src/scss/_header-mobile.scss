@@ -1,0 +1,53 @@
+.header {
+    @media (max-width: 480px) {
+        background-color: #fff;
+        .header-bar {
+            background-color: #f0f;
+            width: 80vw;
+            height: 40px;
+        }
+        margin: 0;
+        padding: 0;
+        h3 {
+            position: relative;
+            margin: 7px;
+            float: left;
+        }
+        .mobile-drawer-button {
+            display: block;
+            float: right;
+            height: 24px;
+            padding: 7px;
+        }
+        .nav {
+            background-color: #fff;
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            padding: 0;
+            overflow: hidden;
+            li {
+                transition: all 0.5s;
+                margin: 0;
+                width: 250px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                border: 3px solid $common-background;
+                &:nth-child(even) {
+                    width: 200px;
+                }
+                a {
+                    margin: 0;
+                    width: 75px;
+                    color: $common-text !important;
+                    text-decoration: none;
+                }
+            }
+        }
+        #drawer-toggle[type=checkbox]:checked ~ .nav li {
+           width: 0;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+@import 'colors';
+
+body {
+    background-color: $common-background;
+    color: $common-text;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+@import 'header';
+@import 'header-mobile';

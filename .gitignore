@@ -1,0 +1,8 @@
+#Ignore All Node Modules
+node_modules/
+
+#Ignore Distribution Folder
+dist/
+
+#Ignore Public Folder
+public/
