@@ -2,7 +2,7 @@
 node_modules/
 
 #Ignore Distribution Folder
-dist/
+website/dist/
 
 #Ignore Public Folder
-public/
+website/public/
