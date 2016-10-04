@@ -1,0 +1,31 @@
+{
+  "name": "tbd-cli",
+  "version": "1.0.0",
+  "description": "The cli for The Big Drink, allows the use of the \" drink \" command.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarellaB/bigdrink.git"
+  },
+  "bin": {
+    "drink": "index.js"
+  },
+  "keywords": [
+    "cli",
+    "tbd",
+    "bigdrink",
+    "drink"
+  ],
+  "author": "Brandon Marella",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarellaB/bigdrink/issues"
+  },
+  "homepage": "https://github.com/MarellaB/bigdrink#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
