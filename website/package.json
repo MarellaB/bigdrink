@@ -28,5 +28,6 @@
     "gulp-uglify": "^2.0.0",
     "gulp-util": "^3.0.7",
     "mkdirp": "^0.5.1"
-  }
+  },
+  "dependencies": {}
 }
