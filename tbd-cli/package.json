@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/MarellaB/bigdrink#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "request": "^2.75.0"
   }
 }
