@@ -3,6 +3,7 @@
 
 const program = require('commander');
 const request = require('request');
+const fs      = require('fs');
 
 program.parse(process.argv); // notice that we have to parse in a new statement.
 
@@ -35,20 +36,25 @@ function getRepo() {
     console.log('Pulling private recipe ' + recipeInfo.name + ' by ' + recipeInfo.author);
   }
   return {
-    gulpfile: request({
-      uri: 'https://raw.githubusercontent.com/' + recipeInfo.author + '/'
-        + recipeInfo.name + '/master/gulpfile.js'
-      }, function(error, response, body) {
+    gulpfile: request('https://raw.githubusercontent.com/' + recipeInfo.author + '/'
+      + recipeInfo.name + '/master/gulpfile.js',
+      function(error, response, body) {
         return body;
-      }),
-    config: request({
-      uri: 'https://raw.githubusercontent.com/' + recipeInfo.author + '/'
-        + recipeInfo.name + '/master/.tbdconfig'
-      }, function(error, response, body) {
+    }),
+    config: request('https://raw.githubusercontent.com/' + recipeInfo.author + '/'
+      + recipeInfo.name + '/master/.tbdconfig',
+      function(error, response, body) {
         return body;
-      })
+    })
   };
 }
 var recipeRepo = getRepo();
+fs.writeFile("gulpfile.js", recipeRepo.gulpfile, function(err) {
+  if (err) {
+    return console.log('err');
+  }
+  console.log(recipeRepo.gulpfile.body);
+  console.log('Gulpfile created');
+})
 
 if (program.args.length === 0) program.help();

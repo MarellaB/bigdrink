@@ -13,7 +13,7 @@ For now, yes. Maybe one day we will move on to something bigger, but
   as of right now, just Gulp files.
 
 ## Why should I use TBD?
-Instead of spending a few hours writing your own "perfect" build process, you 
+Instead of spending a few hours writing your own "perfect" build process, you
   can download someone else's and get right into working. Not only that, but you
   don't have to worry about missing something, use the most popular coffeescript
   recipe or the fastest sass recipe, it's up to you! Or even find one that
@@ -44,11 +44,9 @@ You can just type " *drink &lt;recipe-name&gt;* " in the terminal again.
 ## Community
 The website: [The Big Drink](#to-website)
 
-Slack: Working on it!
+Forum: Working on it!
 
-Forum: Working on this too!
-
-Twitter: Yep, this too.
+Twitter: [TBDCLI](#https://twitter.com/tbdcli)
 
 ## So, what's with the name?
 I decided that since we were focusing on Gulp, it would be fun to make "The Big Drink"

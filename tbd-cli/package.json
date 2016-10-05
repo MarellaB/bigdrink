@@ -1,6 +1,6 @@
 {
   "name": "tbd-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The cli for The Big Drink, allows the use of the \" drink \" command.",
   "main": "index.js",
   "scripts": {
