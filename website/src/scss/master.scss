@@ -1,10 +1,10 @@
 body {
     margin: 0;
+    padding-top: 40px;
     background-color: #fafafa;
 }
 
 .header {
-    background-color: #42d9f4;
     height: 40px;
     width: 100vw;
     top: 0;
@@ -13,51 +13,102 @@ body {
     h2 {
         float: left;
         margin: 8px;
+        color: #fff;
+        width: 13%;
     }
     ul {
-      width: 500px;
+      width: 25%;
+      float: right;
       position: relative;
       text-align: center;
       padding: 0;
+      margin: 10px 0;
       list-style: none;
       li {
         display: inline-block;
-        line-height: 40px;
-        div {
-          position: relative;
-          z-index: -1;
-          border-radius: 50%;
-          margin: 0 auto;
-          top: 20px;
-          height: 0;
-          width: 0%;
-          background-color: #fff;
-          transition: all 0.4s;
-        }
-        &:not(.divider) {
-          width: 125px;
-        }
         a {
-          padding: 15px 25px;
+          color: #fff;
+          padding: 10px 15px;
           transition: all 0.4s;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 14px;
           &:hover {
             color: #555;
           }
         }
-        &:hover {
-          div {
-            margin-bottom: -4px;
-            width: 80%;
-            height: 4px;
-          }
-        }
-        &.divider {
-          background-color: rgba(0, 0, 0, 0.6);
-          position: absolute;
-          border-radius: 50%;
-          width: 2px;
-          height: 40px;
-        }
       }
     }
+}
+
+.searchBar {
+  font-size: 24px;
+  vertical-align: middle;
+  width: 60%;
+  margin: 5px auto 0;
+  float: left;
+  .searchButton {
+    background-color: #fff;
+    height: 32px;
+    padding: 2px 0;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-left: -7px;
+    transition: all 0.4s;
+    i {
+      transition: all 0.4s;
+      width: 50px;
+      text-align: center;
+      color: #ccc;
+      border: 0;
+      vertical-align: top;
+      height: 0;
+      line-height: 32px;
+    }
+  }
+  #searchInput {
+    transition: all 0.4s;
+    border: 1px solid #ccc;
+    font-weight: 600;
+    color: #ccc;
+    padding: 0 10px;
+    width: calc(100% - 79px);
+    margin-top: -1px;
+    line-height: 31px;
+    vertical-align: top;
+  }
+  #searchInput:focus {
+    border-color: #555;
+    color: #555;
+    outline: none;
+  }
+  #searchInput:focus ~ .searchButton {
+    border-color: #555;
+    i {
+      color: #555 !important;
+    }
+  }
+  .searchButton:hover {
+    cursor: pointer;
+    border-color: #555;
+    i {
+      color: #555 !important;
+    }
+  }
+}
+
+.repo-list {
+  list-style: none;
+  margin: 30px auto;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 600px;
+  height: 100px;
+  border: 1px solid #ccc;
+  p {
+    
+  }
 }
