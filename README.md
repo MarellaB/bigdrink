@@ -26,8 +26,8 @@ Not only that, but you can also keep your own gulp files for use, say your proje
   [private-tbd](https://github.com/MarellaB/bigdrink/wiki/public-tbd) for details.
 
 ## How do I install TBD?
-We are on npm, so just type " *npm install -g tbd-cli* " in the terminal and you are
-  ready to go!
+We are on npm, so just type " *npm install -g tbd-cli* " in the terminal and you
+  are ready to go!
 
 ## How do I install a recipe?
 We wanted to make it simple, so just type " *drink &lt;recipe-name&gt;* " in the
@@ -42,7 +42,6 @@ You can just type " *drink &lt;recipe-name&gt;* " in the terminal again.
   to delete the old one first.
 
 ## Community
-The website: [The Big Drink](#to-website)
 
 Forum: Working on it!
 

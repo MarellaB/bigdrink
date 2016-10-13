@@ -8,6 +8,9 @@ const fs      = require('fs');
 program.parse(process.argv); // notice that we have to parse in a new statement.
 
 function sift() {
+  if (program.args[0] == null) {
+    return;
+  }
   let repoInput = program.args[0];
   let inputSplit = repoInput.split('\-');
   let author = inputSplit[0].split("");

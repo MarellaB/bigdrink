@@ -1,6 +1,6 @@
 {
   "name": "tbd-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The cli for The Big Drink, allows the use of the \" drink \" command.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,8 @@
     "cli",
     "tbd",
     "bigdrink",
-    "drink"
+    "drink",
+    "gulp"
   ],
   "author": "Brandon Marella",
   "license": "MIT",

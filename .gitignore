@@ -1,8 +1,2 @@
 #Ignore All Node Modules
 node_modules/
-
-#Ignore Distribution Folder
-website/dist/
-
-#Ignore Public Folder
-website/public/
