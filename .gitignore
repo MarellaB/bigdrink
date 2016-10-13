@@ -1,2 +1,5 @@
 #Ignore All Node Modules
 node_modules/
+
+#Ignore test folder (Used in cloud 9 to allow testing)
+.test/
