@@ -38,17 +38,18 @@ function sift() {
   }
 }
 
-// https://raw.githubusercontent.com/MarellaB/tbd-gulp/master/gulpfile.js
-function getRepo() {
+function pullFile() {
   let recipeInfo = sift();
-  request('https://raw.githubusercontent.com/' + recipeInfo.author + '/' +  + '/master/gulpfile.js').pipe(fs.createWriteStream('doodle.png'))
-  
-}
-var recipeRepo = getRepo();
-fs.writeFile("gulpfile.js", recipeRepo.gulpfile, function(err) {
-  if (err) {
-    return console.log('err');
+  if (recipeInfo.author == null) {
+    console.log('Public packages are not yet implemented. Please specify an author.');
   }
-  console.log(recipeRepo.gulpfile);
-  console.log('Gulpfile created');
-});
+  request('https://raw.githubusercontent.com/' + recipeInfo.author + '/' + recipeInfo.name + '/master/gulpfile.js',
+    (error, response, body) => {
+      if (response.statusCode == 404) {
+        console.log('Package not found');
+        console.log('Please check the recipe and author entered and make sure everything is spelled correctly');
+        process.exit();
+      }
+    }).pipe(fs.createWriteStream('gulpfile.js'));
+}
+pullFile();

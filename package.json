@@ -1,7 +1,8 @@
 {
   "name": "tbd-cli",
   "version": "1.0.2",
-  "description": "The cli for The Big Drink, allows the use of the \" drink \" command.",
+  "description":
+    "The cli for The Big Drink, allows the use of the \" drink \" command.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
