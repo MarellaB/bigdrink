@@ -12,7 +12,7 @@ if (program.args.length === 0) {
   process.exit();
 }
 
-function sift() {
+function sift(siftLine) {
   if (program.args[0] == null) {
     return;
   }
@@ -39,7 +39,7 @@ function sift() {
 }
 
 function pullFile() {
-  let recipeInfo = sift();
+  let recipeInfo = sift(program);
   if (recipeInfo.author == null) {
     console.log('Public packages are not yet implemented. Please specify an author.');
   }
@@ -53,3 +53,13 @@ function pullFile() {
     }).pipe(fs.createWriteStream('gulpfile.js'));
 }
 pullFile();
+
+var npm = require("npm");
+npm.load(myConfigObject, function (er) {
+  if (er) return handlError(er)
+  npm.commands.install(["some", "args"], function (er, data) {
+    if (er) return commandFailed(er)
+    // command succeeded, and data might have some info
+  })
+  npm.registry.log.on("log", function (message) { "working" })
+})
