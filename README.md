@@ -1,5 +1,7 @@
 # The Big Drink Wiki
 
+# CURRENTLY NOT FUNCTIONAL!
+
 ## What is TBD?
 TBD is a package manager specifically for Gulp files. It is designed to allow
   people to create and share Gulp files and build off one another. The goal is to

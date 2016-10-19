@@ -12,7 +12,7 @@ if (program.args.length === 0) {
   process.exit();
 }
 
-function sift() {
+function sift(siftLine) {
   if (program.args[0] == null) {
     return;
   }
@@ -87,5 +87,4 @@ function readConfig() {
     }
   });
 }
-
 pullRecipe(sift());
