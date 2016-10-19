@@ -45,7 +45,7 @@ You can just type " *drink &lt;recipe-name&gt;* " in the terminal again.
 
 Forum: Working on it!
 
-Twitter: [TBDCLI](#https://twitter.com/tbdcli)
+Twitter: [TBDCLI](https://twitter.com/tbdcli)
 
 ## So, what's with the name?
 I decided that since we were focusing on Gulp, it would be fun to make "The Big Drink"
